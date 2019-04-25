@@ -27,6 +27,8 @@ const App = () => {
         firstName: document.querySelector("#firstName").value,
         lastName: document.querySelector("#lastName").value
       }));
+      document.querySelector("#firstName").value = '';
+      document.querySelector("#lastName").value = '';
     });
   })
 
