@@ -8,7 +8,7 @@ import '@vaadin/vaadin-text-field';
 const VaadinGrid = ({ content }) => {
   useEffect(() => {
     document.querySelector("#grid").items = content;
-  })
+  },[content])
   return (
     <vaadin-grid id="grid">
       <vaadin-grid-column path="firstName" header="First name" />
